@@ -59,8 +59,8 @@ int main()
 	int a;
 	scanf("%d",&a);
 	if(a>=90) printf("A\n");
-	else if(a<90&&a>=80) printf("B\n");
-	else if(a<80&&a>=60) printf("C\n");
+	else if(a<90 && a>=80) printf("B\n");
+	else if(a<80 && a>=60) printf("C\n");
 	else printf("F\n");
 }
 ```
@@ -73,7 +73,7 @@ int main()
 	int a,b,ans=0;
 	scanf("%d%d",&a,&b);
 	for(int i=1; i<=b; i++){
-		if(a%i==0&&b%i==0){
+		if(a % i == 0 && b % i == 0){
 			ans=i;
 		}
 	}
