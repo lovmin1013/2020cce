@@ -56,12 +56,12 @@ int main()
 #include <stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    if(n>=90) printf("A\n");
-    else if(n<90&&n>=80) printf("B\n");
-    else if(n<80&&n>=60) printf("C\n");
-    else printf("F\n");
+	int a;
+	scanf("%d",&a);
+	if(a>=90) printf("A\n");
+	else if(a<90&&a>=80) printf("B\n");
+	else if(a<80&&a>=60) printf("C\n");
+	else printf("F\n");
 }
 ```
 進階題-分式化簡 : 輸入分式的分子及分母(分母不可為0)，將其化簡後的分式輸出。 
@@ -70,16 +70,17 @@ int main()
 #include <stdio.h>
 int main()
 {
-	int a[10];
-	int n=0;
-	for(int i=0; i<10; i++){
-		scanf("%d",&a[i]);
-	}
-	for(int j=0; j<10; j++){
-		if(a[j] % 3 == 0){
-		n+=1;
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=0;
+	scanf("%d%d",&a,&b);
+	for(int i=1; i<=a; i++){
+		if(a%i==0&&b%i==0){
+			ans=i;
 		}
 	}
-	printf("%d\n",n);
+	printf("%d %d\n",a/ans,b/ans);
+}
 }
 ```
