@@ -70,9 +70,6 @@ int main()
 #include <stdio.h>
 int main()
 {
-#include <stdio.h>
-int main()
-{
 	int a,b,ans=0;
 	scanf("%d%d",&a,&b);
 	for(int i=1; i<=a; i++){
@@ -81,6 +78,5 @@ int main()
 		}
 	}
 	printf("%d %d\n",a/ans,b/ans);
-}
 }
 ```
