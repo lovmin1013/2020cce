@@ -80,7 +80,7 @@ int main()
 	printf("%d %d\n",a/ans,b/ans);
 }
 ```
-##第二週正課
+## 第二週正課
 指標
 ```C
 #include <stdio.h>
