@@ -7,7 +7,7 @@
 ```C
 #include <stdio.h>
 int main()
-{
+{Cancel Changes
 	int a;
 	scanf("%d",&a);
 	printf("%d=50*%d+5*%d+1*%d\n",a,a/50,(a%50)/5,(a%5)/1);
@@ -78,5 +78,23 @@ int main()
 		}
 	}
 	printf("%d %d\n",a/ans,b/ans);
+}
+```
+##第二週正課
+指標
+```C
+#include <stdio.h>
+int main()
+{
+    int n1=10, n2=20, n3=30;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p = &n1;
+    *p=200;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p2 = &n3;
+    *p2=300;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
 }
 ```
