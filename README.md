@@ -99,5 +99,4 @@ int main()
 }
 ```
 ![week02-2](https://user-images.githubusercontent.com/79676872/110062354-137d0100-7da4-11eb-9aab-c85526904ba3.png)
-![week02-2](https://user-images.githubusercontent.com/79676872/110062363-17108800-7da4-11eb-83d0-da9548f0539f.png)
 
