@@ -99,4 +99,27 @@ int main()
 }
 ```
 ![week02-2](https://user-images.githubusercontent.com/79676872/110062354-137d0100-7da4-11eb-9aab-c85526904ba3.png)
+陣列
+```C
+#include <stdio.h>
+int main()
+{
+    int n[3]={10,20,30};
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+
+    int *p = &n[0];
+    *p=200;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+
+    int *p2 = &n[2];
+    *p2=300;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+    
+    p2=p;
+    *p2=400;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+}
+```
+![week02-3](https://user-images.githubusercontent.com/79676872/110071447-01f12480-7db7-11eb-9ae2-c3aad4986937.png)
+
 
