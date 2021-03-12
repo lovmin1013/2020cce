@@ -1,48 +1,6 @@
 # 2020cce
 程式設計(二)
 
-
-## 第二週正課
-指標 - 利用*p改變n1以及n3之數值
-```C
-#include <stdio.h>
-int main()
-{
-    int n1=10, n2=20, n3=30;
-    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
-
-    int *p = &n1;
-    *p=200;
-    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
-
-    int *p2 = &n3;
-    *p2=300;
-    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
-}
-```
-![week02-2](https://user-images.githubusercontent.com/79676872/110062354-137d0100-7da4-11eb-9aab-c85526904ba3.png)
-陣列
-```C
-#include <stdio.h>
-int main()
-{
-    int n[3]={10,20,30};
-    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
-
-    int *p = &n[0];
-    *p=200;
-    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
-
-    int *p2 = &n[2];
-    *p2=300;
-    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
-    
-    p2=p;
-    *p2=400;
-    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
-}
-```
-![week02-3](https://user-images.githubusercontent.com/79676872/110071447-01f12480-7db7-11eb-9ae2-c3aad4986937.png)
 ## 第二週實習課
 進階題-讀入整數反序列印 : 設計一個程式，該程式可以連續讀入正整數(輸入0表示結束，至多不超過10個正整數)，
 之後將所輸入的正整數以相反序顯示在畫面上。 
