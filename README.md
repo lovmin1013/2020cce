@@ -454,3 +454,22 @@ int main()
 	else printf("%d\n",100+(n-2000)/500*5);
 }
 ```
+基礎題：兩數間可被5整除的整數 : 輸入兩個整數，找出兩數之間所有可以被5整除的整數。   
+數字範圍：2個整數1 – 10000  
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(b>a){
+		for(int i=a; i<=b; i++){
+			if(i%5==0) printf("%d\n",i);
+		}
+	}
+	else 
+		for(int i=b; i<=a; i++){
+			if(i%5==0) printf("%d\n",i);
+		}
+}
+```
