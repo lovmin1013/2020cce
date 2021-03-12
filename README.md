@@ -398,3 +398,24 @@ int main()
 	printf("\n");
 }
 ```
+進階題-大小寫轉換 : 讀入一個字串(至多10個字元)，     
+將字串中的大小寫英文字母相互轉換(大寫轉為小寫，小寫轉為大寫)後輸出。     
+```C
+#include <stdio.h>
+int main()
+{
+	char c[10];
+	scanf("%s",&c);
+	for(int i=0; i<10; i++){
+		scanf("%s",&c[i]);
+		if(c[i]>='A' && c[i]<='Z'){
+			c[i]+=32;
+		}
+		else if(c[i]>='a'&&c[i]<='z'){
+			c[i]-=32;
+		}
+	}
+	printf("%s",c);
+	printf("\n");
+}
+```
