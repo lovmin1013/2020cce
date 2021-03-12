@@ -298,7 +298,7 @@ int main()
 }
 ```
 ## 第三週正課
-指標 (*) 及 陣列 ([ ])        
+指標 (*) 及 陣列 ([ ]) :        
 NOTE 1
 ```C
 #include <stdio.h>
@@ -337,7 +337,7 @@ int main()
             printAll();
 }
 ```
-住址(&)
+住址(&) : 
 ```C
 #include <stdio.h>
 int a[5]={0,10,20,30,40};
@@ -360,5 +360,20 @@ int main()
     *p=555;
             printAll();
             printf("p心裡記的小紙條是:%d\n",p);
+}
+```
+malloc()函式 : 
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int a[10];
+int main()
+{
+    int b[10];
+    
+    int *p = (int*) malloc( sizeof(int)*10 );
+    
+    return 0;
 }
 ```
