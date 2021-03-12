@@ -1,4 +1,4 @@
-指標:
+指標 :
 ```C
 #include <stdio.h>
 int main()
@@ -16,7 +16,7 @@ int main()
 }
 ```
 ![image](https://user-images.githubusercontent.com/79676872/110900741-32e4d280-833e-11eb-925f-e0b78bd7dbed.png)
-陣列:
+陣列 :
 ```C
 #include <stdio.h>
 int main()
@@ -37,3 +37,5 @@ int main()
     printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
 }
 ```
+![image](https://user-images.githubusercontent.com/79676872/110900929-7c352200-833e-11eb-84c3-826216693389.png)
+
