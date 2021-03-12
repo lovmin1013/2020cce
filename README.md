@@ -419,3 +419,38 @@ int main()
 	printf("\n");
 }
 ```
+基礎題-計算幾週與幾天 : 一週有7 天，讀入天數，計算該天數是幾週又幾天。   
+數字範圍：整數1 – 365  
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d %d\n",n/7,n%7);
+}
+```
+基礎題：計程車資計算 : 輸入里程公尺數，輸出應付的車資。  
+計程車資計算方式為：起跳100 元(2000公尺)，續跳5元(每500公尺)。   
+數字範圍：整數1 – 100000。  
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n<=2000) printf("100\n");
+	else printf("%d\n",100+(n-2000+499)/500*5);
+}
+```
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n<=2000) printf("100\n");
+	else if((n-2000)%500>0) printf("%d\n",100+(((n-2000)/500)+1)*5);
+	else printf("%d\n",100+(n-2000)/500*5);
+}
+```
