@@ -144,6 +144,23 @@ int main()
 	printf("\n");
 }
 ```
+```C
+#include <stdio.h>
+int a[11];
+int main()
+{
+	int N=0;
+	for(int i=0; i<10; i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0) break;
+		N++;
+	}
+	for(int i=N-1; i>=0; i--){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
 進階題-A的B次方函數 : 
 題目內容：請撰寫一個函數MYPOWER(A,B)，可以計算A^B結果。     
 數字範圍：整數 1 – 9。       
