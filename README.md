@@ -81,7 +81,7 @@ int main()
 }
 ```
 ## 第二週正課
-指標(*) - 利用*p改變n1以及n3之數值
+指標 - 利用*p改變n1以及n3之數值
 ```C
 #include <stdio.h>
 int main()
