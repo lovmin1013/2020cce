@@ -337,6 +337,7 @@ int main()
             printAll();
 }
 ```
+![week03-2](https://user-images.githubusercontent.com/79676872/110890102-5bfb6800-832a-11eb-9997-671d238cd20a.png)
 住址(&) : 
 ```C
 #include <stdio.h>
@@ -362,6 +363,7 @@ int main()
             printf("p心裡記的小紙條是:%d\n",p);
 }
 ```
+![week03-3](https://user-images.githubusercontent.com/79676872/110890072-48e89800-832a-11eb-967d-197ee2573cf1.png)
 malloc()函式 : 
 ```C
 #include <stdio.h>
@@ -377,3 +379,5 @@ int main()
     return 0;
 }
 ```
+![week03-4](https://user-images.githubusercontent.com/79676872/110890083-50a83c80-832a-11eb-9889-b6af0000bf0b.png)
+
