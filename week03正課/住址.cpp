@@ -10,13 +10,13 @@ int main()
     int *p = &a[2];
     *p = 222;
             printAll();
-            printf("p¤ß¸Ì°Oªº¤p¯È±ø¬O:%d\n",p);
+            printf("på¿ƒè£¡è¨˜çš„å°ç´™æ¢æ˜¯:%d\n",p);
     p = p+2;
     *p=666;
             printAll();
-            printf("p¤ß¸Ì°Oªº¤p¯È±ø¬O:%d\n",p);
+            printf("på¿ƒè£¡è¨˜çš„å°ç´™æ¢æ˜¯:%d\n",p);
     p--;
     *p=555;
             printAll();
-            printf("p¤ß¸Ì°Oªº¤p¯È±ø¬O:%d\n",p);
+            printf("på¿ƒè£¡è¨˜çš„å°ç´™æ¢æ˜¯:%d\n",p);
 }
