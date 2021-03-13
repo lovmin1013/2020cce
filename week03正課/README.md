@@ -63,3 +63,4 @@ int main()
             printf("p心裡記的小紙條是:%d\n",p);
 }
 ```
+![image](https://user-images.githubusercontent.com/79676872/111024351-49ac2780-8419-11eb-9e25-9c31eb8a11fd.png)
