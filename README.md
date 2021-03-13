@@ -1,89 +1,6 @@
 # 2020cce
 程式設計(二)
 
-## 第三週正課
-指標 (*) 及 陣列 ([ ]) :        
-NOTE 1
-```C
-#include <stdio.h>
-int a[5]={0,10,20,30,40};
-void printAll(){
-    for(int i=0; i<5; i++) printf("%d ",a[i]);
-        printf("\n");
-}
-int main()
-{
-            printAll();
-    int *p = &a[2];
-    *p = 222;
-            printAll();
- }
-```
-NOTE 2
-```C
-#include <stdio.h>
-int a[5]={0,10,20,30,40};
-void printAll(){
-    for(int i=0; i<5; i++) printf("%d ",a[i]);
-        printf("\n");
-}
-int main()
-{
-            printAll();
-    int *p = &a[2];
-    *p = 222;
-            printAll();
-    p = p+2;
-    *p=666;
-            printAll();
-    p--;
-    *p=555;
-            printAll();
-}
-```
-![week03-2](https://user-images.githubusercontent.com/79676872/110890102-5bfb6800-832a-11eb-9997-671d238cd20a.png)
-住址(&) : 
-```C
-#include <stdio.h>
-int a[5]={0,10,20,30,40};
-void printAll(){
-    for(int i=0; i<5; i++) printf("%d ",a[i]);
-        printf("\n");
-}
-int main()
-{
-            printAll();
-    int *p = &a[2];
-    *p = 222;
-            printAll();
-            printf("p心裡記的小紙條是:%d\n",p);
-    p = p+2;
-    *p=666;
-            printAll();
-            printf("p心裡記的小紙條是:%d\n",p);
-    p--;
-    *p=555;
-            printAll();
-            printf("p心裡記的小紙條是:%d\n",p);
-}
-```
-![week03-3](https://user-images.githubusercontent.com/79676872/110890072-48e89800-832a-11eb-967d-197ee2573cf1.png)
-malloc()函式 : 
-```C
-#include <stdio.h>
-#include <stdlib.h>
-
-int a[10];
-int main()
-{
-    int b[10];
-    
-    int *p = (int*) malloc( sizeof(int)*10 );
-    
-    return 0;
-}
-```
-![week03-4](https://user-images.githubusercontent.com/79676872/110890083-50a83c80-832a-11eb-9889-b6af0000bf0b.png)
 ## 第三週實習課
 進階題-計算陣列的平方值 : 輸入一個整數N，再依序輸入N個整數置於陣列中，   
 計算各元素的平方值，再列出此算出平方值後的陣列。    
@@ -134,7 +51,7 @@ int main()
 	printf("%d %d\n",n/7,n%7);
 }
 ```
-基礎題：計程車資計算 : 輸入里程公尺數，輸出應付的車資。  
+基礎題-計程車資計算 : 輸入里程公尺數，輸出應付的車資。  
 計程車資計算方式為：起跳100 元(2000公尺)，續跳5元(每500公尺)。   
 數字範圍：整數1 – 100000。  
 ```C
@@ -158,7 +75,7 @@ int main()
 	else printf("%d\n",100+(n-2000)/500*5);
 }
 ```
-基礎題：兩數間可被5整除的整數 : 輸入兩個整數，找出兩數之間所有可以被5整除的整數。   
+基礎題-兩數間可被5整除的整數 : 輸入兩個整數，找出兩數之間所有可以被5整除的整數。   
 數字範圍：2個整數1 – 10000  
 ```C
 #include <stdio.h>
@@ -175,5 +92,37 @@ int main()
 		for(int i=b; i<=a; i++){
 			if(i%5==0) printf("%d\n",i);
 		}
+}
+```
+基礎題-整數間最大距離 : 輸入3個相異整數，找出整數間最大的距離。   
+數字範圍：整數1 – 10000  
+```C
+#include <stdio.h>
+int main()
+{
+	int a[3];
+	for(int i=0; i<3; i++)
+		scanf("%d",&a[i]);
+	int min=a[0];
+	int max=a[0];
+	for(int i=0; i<3; i++){
+		if(min>a[i]) min=a[i];
+		if(max<a[i]) max=a[i];
+	}
+	printf("%d\n",max-min);
+}
+```
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b && a>c && b>c) printf("%d\n",a-c);
+	else if(a>b && a>c && c>b) printf("%d\n",a-b);
+	else if(b>a && b>c && a>c) printf("%d\n",b-c);
+	else if(b>a && b>c && c>a) printf("%d\n",b-a);
+	else if(c>a && c>a && a>b) printf("%d\n",c-b);
+	else if(c>a && c>a && b>a) printf("%d\n",c-a);
 }
 ```
