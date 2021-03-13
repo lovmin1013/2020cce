@@ -64,3 +64,18 @@ int main()
 }
 ```
 ![image](https://user-images.githubusercontent.com/79676872/111024351-49ac2780-8419-11eb-9e25-9c31eb8a11fd.png)
+malloc()函式 :
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int a[10];
+int main()
+{
+    int b[10];
+    
+    int *p = (int*) malloc( sizeof(int)*10 );
+    
+    return 0;
+}
+```
