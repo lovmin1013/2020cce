@@ -1,4 +1,4 @@
-字串輸入
+5-1 字串輸入
 ```C
 #include <stdio.h>
 int main()
@@ -15,4 +15,17 @@ int main()
 }
 ```
 ![week05-2](https://user-images.githubusercontent.com/79676872/112566851-b57b9080-8e1a-11eb-8d29-0955d679991c.png)
+5-2
+```C
+#include <stdio.h>
+int main()
+{///5個字串,每個字串有10格
+
+    char line[5][10]={"decline","proper","majority","bullet","shop"};
+    for(int i=0; i<5; i++){
+        printf("%s\n",line[i]);
+    }
+}
+```
+![week05-3](https://user-images.githubusercontent.com/79676872/112571034-270b0d00-8e22-11eb-9d01-d4b0aa30e77e.png)
 
