@@ -28,4 +28,19 @@ int main()
 }
 ```
 ![week05-3](https://user-images.githubusercontent.com/79676872/112571034-270b0d00-8e22-11eb-9d01-d4b0aa30e77e.png)
+5-3
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char line[10]="majority";
+    char line2[10]="ask";
+    if(strcmp(line,line2)>0){
+        printf("右邊大\n");
+    }
+    else printf("左邊大\n");
+}
+```
+![week05-5](https://user-images.githubusercontent.com/79676872/112572027-3ee39080-8e24-11eb-8d6a-ce57106b0e80.png)
 
