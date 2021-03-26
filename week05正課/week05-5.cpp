@@ -5,7 +5,7 @@ int main()
     char line[10]="majority";
     char line2[10]="ask";
     if(strcmp(line,line2)>0){
-        printf("¥kÃä¤j\n");
+        printf("å³é‚Šå¤§\n");
     }
-    else printf("¥ªÃä¤j\n");
+    else printf("å·¦é‚Šå¤§\n");
 }
