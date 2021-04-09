@@ -26,3 +26,4 @@ int main()
 	}
 }
 ```
+![week07-2](https://user-images.githubusercontent.com/79676872/114122811-a40aac00-9923-11eb-9307-6983f7be14b7.png)
