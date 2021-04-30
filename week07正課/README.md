@@ -61,4 +61,40 @@ int main()
 	}
 }
 ```
+```C
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char line[2000][75];
+char other[100];
+int compare(const void *p1, const void *p2)
+{
+	char *s1 = (char*) p1;
+	char *s2 = (char*) p2;
+	return strcmp(s1,s2);
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	
+	for(int i=0; i<n; i++){
+		scanf("%s",line[i]);
+		gets(other);
+	}
+	qsort(line, n, 75, compare);
+	
+	int ans=1;
+	printf("%s ",line[0]);
+	for(int i=0; i<n-1; i++){
+		if(strcmp(line[i],line[i+1])!=0){
+			printf("%d\n",ans);
+			printf("%s ",line[i+1]);
+			ans=1;
+		}
+		else ans++;
+	}
+	printf("%d\n",ans);
+}
+```
 ![week07-3](https://user-images.githubusercontent.com/79676872/115133726-e5ded500-a03c-11eb-8887-17b6f62d0642.png)
