@@ -1,4 +1,5 @@
-///計算樹木種類
+## 計算樹木種類
+step01
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -20,6 +21,7 @@ int main()
 }
 ```
 ![week10-1](https://user-images.githubusercontent.com/79676872/116651465-da34cc00-a9b5-11eb-961a-262fabfd4851.png)
+step02
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -43,6 +45,7 @@ int main()
 }
 ```
 ![week10-2](https://user-images.githubusercontent.com/79676872/116651469-de60e980-a9b5-11eb-8f41-96532a7da599.png)
+step03
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -71,6 +74,7 @@ int main()
 }
 ```
 ![week10-3](https://user-images.githubusercontent.com/79676872/116651474-e02aad00-a9b5-11eb-8972-e9d56f6bc2e3.png)
+step04
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -106,6 +110,7 @@ int main()
 }
 ```
 ![week10-4](https://user-images.githubusercontent.com/79676872/116651478-e1f47080-a9b5-11eb-87b5-c59c7b320ac1.png)
+step05
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -150,6 +155,7 @@ int main()
 }
 ```
 ![week10-5](https://user-images.githubusercontent.com/79676872/116651481-e3be3400-a9b5-11eb-930e-9b87d9bffa79.png)
+最終結果
 ```C
 #include <stdio.h>
 #include <string.h>
