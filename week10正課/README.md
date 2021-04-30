@@ -1,4 +1,4 @@
-計算樹木種類
+///計算樹木種類
 ```C
 #include <stdio.h>
 #include <string.h>
