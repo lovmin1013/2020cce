@@ -100,4 +100,24 @@ int main()
 }
 ```
 ![week12-3](https://user-images.githubusercontent.com/79676872/118211684-13356c00-b49f-11eb-8ac4-ef2efa1dea03.png)
+UVA299 交換火車 無ans
+```C
+#include <stdio.h>
+int a[100];
+int main()
+{
+	int T;
+	scanf("%d",&T);///step1:Input 有幾筆
+	for(int t=0; t<T; t++){
+		int N;
+		scanf("%d",&N);
+		for(int i=0; i<N; i++){///step2:Input到陣列a[i]
+			scanf("%d",&a[i]);
+		}
+		int ans=0;
 
+		printf("Optimal train swapping takes %d swaps.\n",ans);
+	}
+}
+```
+![week12-4](https://user-images.githubusercontent.com/79676872/118214761-f307ac00-b4a2-11eb-8322-af2cbad1af58.png)
