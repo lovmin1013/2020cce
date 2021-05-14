@@ -153,3 +153,24 @@ int main()
 }
 ```
 ![week12-5](https://user-images.githubusercontent.com/79676872/118215889-0ae02f80-b4a5-11eb-86ac-5ac8826b1a7c.png)
+UVA11321 排排排序
+```C
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int N,M;///step1:N,M 輸入
+	while(scanf("%d %d",&N,&M)==2){
+		for(int i=0; i<N; i++){///step2:Input N行
+			scanf("%d",&a[i]);
+		}
+
+        ///step3:Output
+		printf("%d %d\n",N,M);
+		for(int i=0; i<N; i++){
+			printf("%d\n",a[i]);
+		}
+	}
+}
+```
+![week12-6](https://user-images.githubusercontent.com/79676872/118217737-a921c480-b4a8-11eb-8273-3914ad8c02d3.png)
