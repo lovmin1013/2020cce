@@ -19,3 +19,5 @@ int main()
 	}
 }
 ```
+![week12-1](https://user-images.githubusercontent.com/79676872/118208633-b4212880-b499-11eb-8a94-7b9cdaaebc63.png)
+
