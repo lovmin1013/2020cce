@@ -1,4 +1,4 @@
-UVA10062 頻率(簡化)排序
+UVA10062 頻率(簡化)不需排序
 ```C
 #include <stdio.h>
 char line[2000];
