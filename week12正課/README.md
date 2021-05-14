@@ -153,7 +153,7 @@ int main()
 }
 ```
 ![week12-5](https://user-images.githubusercontent.com/79676872/118215889-0ae02f80-b4a5-11eb-86ac-5ac8826b1a7c.png)
-UVA11321 排排排序
+UVA11321 排排排序 無排序
 ```C
 #include <stdio.h>
 int a[10000];
