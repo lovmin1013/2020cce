@@ -64,8 +64,8 @@ int main()
 ```C
 #include <stdio.h>
 struct data{
-    int ans;///¦³´X­Ó??
-    char c;///¦r¥À
+    int ans;///有幾個?
+    char c;///字母
 };
 struct data box;
 int main()
@@ -80,8 +80,8 @@ int main()
 ```C
 #include <stdio.h>
 typedef struct data{
-    int ans;///¦³´X­Ó??
-    char c;///¦r¥À
+    int ans;///有幾個?
+    char c;///字母
 }DATA;
 ///struct data box;
 DATA box;
