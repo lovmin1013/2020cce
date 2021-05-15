@@ -174,3 +174,40 @@ int main()
 }
 ```
 ![week12-6](https://user-images.githubusercontent.com/79676872/118217737-a921c480-b4a8-11eb-8273-3914ad8c02d3.png)
+最終結果
+```C
+#include <stdio.h>
+int a[10000];
+void swap(int i, int j)
+{
+	int temp= a[i];
+	a[i]=a[j];
+	a[j]=temp;
+}
+int main()
+{
+	int N,M;///step1:N,M 輸入
+	while(scanf("%d %d",&N,&M)==2){
+		for(int i=0; i<N; i++){///step2:Input N行
+			scanf("%d",&a[i]);
+		}
+		
+		for(int i=0; i<N; i++){//step4: 排序
+			for(int j=i+1; j<N; j++){
+				if(a[i]%M> a[j]%M) swap(i,j);//Rule(1)
+				if(a[i]%M==a[j]%M){
+					if(a[i]%2==0 && a[j]%2!=0) swap(i,j);//奇數要換上去
+					if(a[i]%2!=0 && a[j]%2!=0 && a[i]<a[j]) swap(i,j);//奇數，大放前面
+					if(a[i]%2==0 && a[j]%2==0 && a[i]>a[j]) swap(i,j);//偶數，小放前面
+				}
+			}
+		}
+        ///step3:Output
+		printf("%d %d\n",N,M);
+		for(int i=0; i<N; i++){
+			printf("%d\n",a[i]);
+		}
+	}
+}
+```
+![12-7](https://user-images.githubusercontent.com/79676872/118356079-1e26f400-b5a6-11eb-84a9-8273689faeaf.png)
