@@ -57,8 +57,8 @@ int []a = new int[49];
 void setup(){
   size(400,200);
   textSize(30);
-  for(int i=0; i<49; i++) a[i]= i+1;//人類:1 
-}                          //電腦:0
+  for(int i=0; i<49; i++) a[i]= i+1;//電腦起始為0，人類為1 
+}//保證取出來的數字絕對不一樣           
 void draw(){
   background(#5A71FF);
   for(int i=0; i<6; i++){ //49個只秀出6個數
