@@ -91,7 +91,7 @@ void draw(){
   for(int i=0; i<N; i++){ //49個只秀出6個數
     fill(255); ellipse(50+i*50,100, 40, 40); //畫出白球
     textAlign(CENTER,CENTER); //文字對齊中間
-    fill(0);text(a[i], 50+i*50, 100); //填入黑字
+    fill(0);text(a[i], 50+i*50, 97); //填入黑字
   } //大樂透抽獎時，49顆球挑6顆
 }
 void mousePressed(){
