@@ -66,3 +66,4 @@ void draw(){
   text("還剩下: " +h1 +":" +m1 +":" +s1, 100, 300);
 } 
 ```
+![week13-3](https://user-images.githubusercontent.com/79676872/119914388-8dcbb480-bf92-11eb-8f06-05b3fcf7b37d.png)
