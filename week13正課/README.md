@@ -41,7 +41,7 @@ void draw(){
 }
 ```
 ![week13-2](https://user-images.githubusercontent.com/79676872/119781763-f9177700-befd-11eb-9e6d-1cd8043cece6.png)
-
+3.最終結果
 ```C
 void setup(){
   size(1024, 400);
