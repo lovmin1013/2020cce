@@ -27,3 +27,4 @@ void mousePressed(){//mouse按下去,才做亂數
 }
 ```
 ![week14-2](https://user-images.githubusercontent.com/79676872/119918768-a8565b80-bf9b-11eb-8140-4c768eeb25e2.png)
+亂數洗牌
