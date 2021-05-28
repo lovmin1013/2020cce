@@ -8,3 +8,4 @@ void setup(){
   text (ans, 0, 30);
 }
 ```
+![week14-1](https://user-images.githubusercontent.com/79676872/119917537-56acd180-bf99-11eb-92ba-84061bb904dc.png)
