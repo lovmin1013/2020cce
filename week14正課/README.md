@@ -72,7 +72,8 @@ void mousePressed(){
   }
 }
 ```
-![week14-4](https://user-images.githubusercontent.com/79676872/119924120-95488900-bfa5-11eb-8a2f-869cc3d4fa86.png)
+![week14-4](https://user-images.githubusercontent.com/79676872/119924120-95488900-bfa5-11eb-8a2f-869cc3d4fa86.png)  
+
 大樂透的球會慢慢出來，但是會超過六顆球
 ```C
 int []a = new int[49];
