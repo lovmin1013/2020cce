@@ -50,3 +50,26 @@ void mousePressed(){
 ```
 ![week14-3-1](https://user-images.githubusercontent.com/79676872/119921374-785d8700-bfa0-11eb-917a-a3890ff50eca.png)
 ![week14-3](https://user-images.githubusercontent.com/79676872/119921380-7abfe100-bfa0-11eb-9dd5-4bfd7b5a0322.png)
+# 大樂透
+用作弊方法，事先亂數洗10000次，再拿前面6個數字為中獎號碼
+```C
+int []a = new int[49];
+void setup(){
+  size(400,200);
+  textSize(30);
+  for(int i=0; i<49; i++) a[i]= i+1;//人類:1 
+}                          //電腦:0
+void draw(){
+  background(#5A71FF);
+  for(int i=0; i<6; i++){ //49個只秀出6個數
+    text(a[i], i*50, 100);
+  } //大樂透抽獎時，49顆球挑6顆
+}
+void mousePressed(){
+  for(int i=0; i<10000; i++){
+    int i1= (int)random(49), i2=(int)random(49);
+    int temp=a[i1]; a[i1]=a[i2]; a[i2]=temp;
+  }
+}
+```
+![week14-4](https://user-images.githubusercontent.com/79676872/119924120-95488900-bfa5-11eb-8a2f-869cc3d4fa86.png)
