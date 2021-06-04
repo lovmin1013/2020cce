@@ -12,3 +12,6 @@ step03 用程式素描本中的函示庫加入Sound，把mp3檔放進去PDE寫�
 
 step04 以step02為主，插入step03宣告，但每秒播60次，很吵  
 ![week15-4](https://user-images.githubusercontent.com/79676872/120737450-aa329880-c520-11eb-8ebf-fde5023171fd.png)
+
+step05 if( player.isPlaying() )時,要stop(), 否則 play(), 記得要放bell.mp3
+![week15-5](https://user-images.githubusercontent.com/79676872/120738508-896b4280-c522-11eb-8813-8852f0ee3ee9.png)
