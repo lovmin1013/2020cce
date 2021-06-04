@@ -93,7 +93,7 @@ void mousePressed(){//2種 stop() play()
 ```
 ![week15-5](https://user-images.githubusercontent.com/79676872/120738508-896b4280-c522-11eb-8813-8852f0ee3ee9.png)
 
-step05 只播一次
+step05-1 只播一次
 ```C
 //step03出發,做step05
 import processing.sound.*;
