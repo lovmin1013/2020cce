@@ -19,3 +19,6 @@ step05 if( player.isPlaying() )時，要stop()， 否則 play()， 記得要放b
 step05 只播一次  
 ![week15-5-1](https://user-images.githubusercontent.com/79676872/120739704-75c0db80-c524-11eb-90f2-23721a68f96e.png)
 processing to p5js converter: http://faculty.purchase.edu/joseph.mckay/p5jsconverter.html  
+
+step06 開新程式，切換成p5 js模式，利用上方網頁,將processing to p5 js converter轉換，貼上、並執行，就會開網頁  
+![week15-6](https://user-images.githubusercontent.com/79676872/120742327-406abc80-c529-11eb-91ac-a8d815255787.png)
