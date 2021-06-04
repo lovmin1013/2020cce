@@ -15,3 +15,6 @@ step04 以step02為主，插入step03宣告，但每秒播60次，很吵
 
 step05 if( player.isPlaying() )時，要stop()， 否則 play()， 記得要放bell.mp3  
 ![week15-5](https://user-images.githubusercontent.com/79676872/120738508-896b4280-c522-11eb-8813-8852f0ee3ee9.png)
+
+step05 只播一次  
+![week15-5-1](https://user-images.githubusercontent.com/79676872/120739704-75c0db80-c524-11eb-90f2-23721a68f96e.png)
