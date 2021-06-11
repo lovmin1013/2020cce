@@ -27,3 +27,23 @@ void draw(){ //畫，每秒60次
 }  //  圓心    寬  高               角度單位為弧度，非圓周率
 ```
 ![week16-2](https://user-images.githubusercontent.com/79676872/121619496-4b7a9b00-ca9b-11eb-9646-30bdb5cd1bd8.png)
+
+step03 用radians單位,利用 shift移動量的變數,讓它每秒轉動60度,利用radians()換算角度
+```C
+void setup(){
+  size(400,200);
+  fill(0,0,255); //藍色
+  textSize(20);
+} 
+float shift=0;
+void draw(){
+  background(#AF43CE);
+  //float start= radians(90+mouseX);
+  //float stop= radians(180+mouseX);
+  float start= radians(90+shift);
+  float stop= radians(180+shift);
+  arc(100,100, 180,180, start,stop);
+  shift+=1;
+}
+```
+![week16-4](https://user-images.githubusercontent.com/79676872/121623113-b6c76b80-caa1-11eb-9ccb-62db6fbdea13.png)
