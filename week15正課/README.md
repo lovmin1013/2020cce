@@ -1,5 +1,5 @@
 # 倒數計時
-老師範例:https://hackmd.io/CRq72E8QQS20PcnXRrV79w?view
+## 老師範例:https://hackmd.io/CRq72E8QQS20PcnXRrV79w?view
 
 step01 複習倒數計時
 ```C
@@ -115,7 +115,7 @@ void mousePressed(){//2種 stop() play()
 ```
 ![week15-5-1](https://user-images.githubusercontent.com/79676872/120739704-75c0db80-c524-11eb-90f2-23721a68f96e.png)
 
-processing to p5js converter: http://faculty.purchase.edu/joseph.mckay/p5jsconverter.html  
+## processing to p5js converter: http://faculty.purchase.edu/joseph.mckay/p5jsconverter.html  
 
 step06 開新程式，切換成p5 js模式，利用上方網頁,將processing to p5 js converter轉換，貼上、並執行，就會開網頁
 ```C
