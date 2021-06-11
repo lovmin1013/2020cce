@@ -148,3 +148,5 @@ void draw(){
 }
 ```
 ![week16-7](https://user-images.githubusercontent.com/79676872/121628273-779e1800-caab-11eb-96ba-c1efe1a59fb1.png)
+step06-1 中獎橘色區塊
+
