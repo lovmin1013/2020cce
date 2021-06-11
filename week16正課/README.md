@@ -148,6 +148,7 @@ void draw(){
 }
 ```
 ![week16-7](https://user-images.githubusercontent.com/79676872/121628273-779e1800-caab-11eb-96ba-c1efe1a59fb1.png)
+
 step06-1 中獎橘色區塊
 ```C
 void setup(){
@@ -180,4 +181,5 @@ void draw(){
   text(v, 200, 150); //印出轉動的速度
 }
 ```
+![week16-7-1](https://user-images.githubusercontent.com/79676872/121629594-19beff80-caae-11eb-94e9-3487e6e9c14c.png)
 
