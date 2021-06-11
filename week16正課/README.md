@@ -89,3 +89,30 @@ void draw(){
 }
 ```
 ![week16-5](https://user-images.githubusercontent.com/79676872/121624346-ee371780-caa3-11eb-8c94-9025c01a8115.png)
+
+step05 利用mousePressed()觸發 random()讓v可以是亂數,每按一次就會有新的轉動速度
+```C
+void setup(){
+  size(400,200);
+  fill(0,0,255); //藍色
+  textSize(20);
+} 
+float shift=0, v=0;//global變數，一開始速度10
+void mousePressed(){
+  //v= random(10); //0....10.0
+  v= random(10)+5; //5....15.0
+}
+void draw(){
+  background(#AF43CE);
+  float start= radians(90+shift);
+  float stop= radians(180+shift);
+  arc(100,100, 180,180, start,stop);
+  if(v>0.1){ //還有速度時，就轉動
+    shift+=v; //轉動的速度
+    v=v*0.99; //會慢慢減速
+  }
+  text(shift, 200, 100); //印出shift
+  text(v, 200, 150); //印出轉動的速度
+}
+```
+![week16-6](https://user-images.githubusercontent.com/79676872/121626091-59ceb400-caa7-11eb-849e-b5df22ce2676.png)
