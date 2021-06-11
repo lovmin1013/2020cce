@@ -48,7 +48,7 @@ void draw(){
 ```
 ![week16-4](https://user-images.githubusercontent.com/79676872/121623113-b6c76b80-caa1-11eb-9ccb-62db6fbdea13.png)
 
-滑鼠按下去開始轉動，了解 度degrees 及 弧度radians 的差別
+step03-1 滑鼠按下去開始轉動，了解 度degrees 及 弧度radians 的差別
 ```C
 void setup(){
   size(400,200);
@@ -66,7 +66,6 @@ void draw(){
 }
 ```
 ![week16-3-1](https://user-images.githubusercontent.com/79676872/121624800-c72d1580-caa4-11eb-8ee3-f2905a3d8f18.png)
-
 
 step04 利用變數v讓轉動的速度可調整，慢慢 v乘0.99變慢，最後很慢時停下來
 ```C
