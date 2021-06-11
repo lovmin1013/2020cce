@@ -23,7 +23,7 @@ void draw(){ //畫，每秒60次
   fill(0,0,255); //藍色
   float stop=mouseX/50.0;
   text(stop,200,100);
-  arc(100,100, 180,180, 0,stop);
-}  //  圓心    寬  高
+  arc(100,100, 180,180, 0,stop); //start:起始角度 stop:結束角度
+}  //  圓心    寬  高               角度單位為弧度，非圓周率
 ```
 ![week16-2](https://user-images.githubusercontent.com/79676872/121619496-4b7a9b00-ca9b-11eb-9646-30bdb5cd1bd8.png)
