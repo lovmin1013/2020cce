@@ -124,3 +124,35 @@ void keyPressed(){
 }
 ```
 ![week17-6](https://user-images.githubusercontent.com/79676872/122502784-e2aa9a00-d029-11eb-87fd-9ef8dced3f0d.png)
+
+step07 利用陣列,來讓題目變更多。 String [] Q = {好多字串} 再配 int Qi=0 來挑選 Q[Qi] 的字來考試, 答對時 Qi++ 並加分, 小心,Qi太大會當掉哦
+```C
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String []Q={"hello","world","other"};
+int Qi=0;//第幾個Q Q[i]
+void draw(){
+  background(0);
+  text("Score:" +score, 100,50);
+  text("Q:" +Q[Qi],    100,100);
+  text("A:" +line, 100,150);
+}
+int score=0;
+void keyPressed(){
+  int len= line.length();
+  if(key>='a' && key<='z') line =line +key; //小寫鍵
+  if(key>='A' && key<='Z') line =line +key; //大寫鍵
+  if(key == BACKSPACE && len>0) line= line.substring(0,len-1);
+  if(key == ENTER){//算分數
+    if(line.equals(Q[Qi]) == true){
+      score++;
+      Qi++;
+      line="";
+    } else score--;
+  }
+}
+```
+![week17-7](https://user-images.githubusercontent.com/79676872/122503823-b5f78200-d02b-11eb-9810-395b5e4f632a.png)
