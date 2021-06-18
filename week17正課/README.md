@@ -24,7 +24,7 @@ String line="";
 String Q="Hello";
 void draw(){
   background(0);
-  text("Q;"   +Q,    100,100);
+  text("Q:"   +Q,    100,100);
   text("You:" +line, 100,150);
 }
 void mousePressed(){
@@ -43,7 +43,7 @@ String line="";
 String Q="Hello";
 void draw(){
   background(0);
-  text("Q;" +Q,    100,100);
+  text("Q:" +Q,    100,100);
   text("A:" +line, 100,150);
 }
 void keyPressed(){
@@ -54,6 +54,22 @@ void keyPressed(){
 
 step04 
 ```C
-
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String Q="hello";
+void draw(){
+  background(0);
+  text("Q:" +Q,    100,100);
+  text("A:" +line, 100,150);
+}
+void keyPressed(){
+  int len= line.length();
+  if(key>='a' && key<='z') line =line +key; //小寫鍵
+  if(key>='A' && key<='Z') line =line +key; //大寫鍵
+  if(key == BACKSPACE) line= line.substring(0,len-1);
+}
 ```
 ![week17-4](https://user-images.githubusercontent.com/79676872/122498057-0a493480-d021-11eb-8d27-fc7077dc9dc6.png)
