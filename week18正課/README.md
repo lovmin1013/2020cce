@@ -35,7 +35,7 @@ void draw(){
 ```
 ![week18-2](https://user-images.githubusercontent.com/79676872/123358143-7c7bc500-d59d-11eb-8832-cdb37a26aac3.png)
 
-## 教出一段影片
+## 叫出一段影片
 老師在Teams裡有video.mov的影片檔可下載,請下載後,拉到新的Processing視窗,寫新的程式,  
 改用 Movie move 來取代step02的 Capture cam, 大部分和step02很像,只差在new Movie(this,檔名) 還有 movie.play() 或 movie.loop()  
 ```C
