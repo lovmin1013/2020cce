@@ -130,12 +130,11 @@ int main()
  ```
  基礎題-找零錢 : 假設有50元、10元、5元和1元等4種硬幣，請輸入一個金額，並顯示等同於該金額所需的最少硬幣組合
  ```C
- #include <stdio.h>
+#include <stdio.h>
 int main()
-{
-	int n;
-	scanf("%d",&n);
-	if(n<=1500) printf("100");
-	else if(n>1500) printf("%d",100+((n-1500+249)/250)*5);
+{Cancel Changes
+	int a;
+	scanf("%d",&a);
+	printf("%d=50*%d+5*%d+1*%d\n",a,a/50,(a%50)/5,(a%5)/1);
 }
  ```
