@@ -3,12 +3,10 @@
 #include <stdio.h>
 int main()
 {
-	int a[20],ans=0;
-	for(int i=0; i<10; i++){
-		scanf("%d",&a[i]);
-		if(a[i]==0)
-		break;
-		ans++;
+	int a, ans=0;
+	while(scanf("%d",&a)!=EOF){
+		if(a==0) break;
+		else ans++;
 	}
 	printf("%d",ans);
 }
